@@ -1,0 +1,26 @@
+@Test
+@DisplayName(
+    value = "Verify correct list of denominators codes except medical conditions are able to pick up under the measure",
+    expect = "Matches measure specification"
+)
+public void testCase1() throws Exception { //NOSONAR
+
+}
+
+@Test
+@DisplayName(
+    value = "Verify correct list of numerator codes are able to pick up under the measure",
+    expect = "Matches measure specification"
+)
+public void testCase2() throws Exception { //NOSONAR
+
+}
+
+@Test
+@DisplayName(
+    value = "Verify correct list of numerator modifiers are able to pick up under the measure",
+    expect = "Matches measure specification"
+)
+public void testCase3() throws Exception { //NOSONAR
+
+}
