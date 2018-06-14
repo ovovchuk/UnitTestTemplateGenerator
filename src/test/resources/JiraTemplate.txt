@@ -1,3 +1,3 @@
-|1|Verify correct list of denominators codes except medical conditions are able to pick up under the measure|Matches measure specification|
+|1| Verify correct list of denominators codes except medical conditions are able to pick up under the measure |Matches measure specification|
 |2|Verify correct list of numerator codes are able to pick up under the measure|Matches measure specification|
-|3|Verify correct list of numerator modifiers are able to pick up under the measure|Matches measure specification|
+|3|Verify correct list of numerator modifiers are able to pick up under the measure| Matches measure specification |

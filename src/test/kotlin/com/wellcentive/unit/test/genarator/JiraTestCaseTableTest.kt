@@ -20,7 +20,7 @@ internal open class JiraTestCaseTableTest {
 
         assertEquals(splitedJiraTable.size, lineItems.size)
         assertEquals(splitedJiraTable[0][0].toInt(), lineItems[0].number)
-        assertEquals(splitedJiraTable[0][1], lineItems[0].testCase)
+        assertEquals(splitedJiraTable[0][1].trim(), lineItems[0].testCase)
         assertEquals(splitedJiraTable[0][2], lineItems[0].result)
     }
 

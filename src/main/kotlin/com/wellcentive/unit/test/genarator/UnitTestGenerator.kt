@@ -61,6 +61,7 @@ class JiraTestCaseTable(jiraTemplate: String) {
                     .asSequence()
                     .map(this::removeFirstAndLastPipesFromLine)
                     .map { it.split("|") }
+                    .map(this::trimValues)
                     .map(this::mapToJiraTestCaseLineItem)
                     .toList()
 
@@ -69,6 +70,8 @@ class JiraTestCaseTable(jiraTemplate: String) {
         val endIndex = line.length - 1
         return line.substring(startIndex, endIndex)
     }
+
+    private fun trimValues(values: List<String>): List<String> = values.map { it.trim() }
 
     private fun mapToJiraTestCaseLineItem(values: List<String>): JiraTestCaseLineItem {
         return if (isTableWithoutNumeration(values)) createLineItemFromTable(values) else createLineItemFromNumeratedTable(values)
